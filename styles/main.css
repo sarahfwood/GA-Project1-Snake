@@ -1,5 +1,38 @@
 body {
   font-family: sans-serif;
+  background-color: gray;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell.snake {
+  background-color: black;
+}
+
+.cell.food {
+  background-color: red;
+}
+.cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.cell.blank {
+  background-color: white;
+}
+
+/* body {
+  font-family: sans-serif;
 }
 
 .cell {
@@ -25,4 +58,5 @@ body {
 
 .score {
 
-}
+} */
+
