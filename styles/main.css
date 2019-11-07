@@ -1,11 +1,13 @@
 body {
   font-family: sans-serif;
-  background-color: #183693;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 220px;
+  left: 70px;
 }
 
 .row {
@@ -28,35 +30,18 @@ body {
 }
 
 .cell.blank {
-  background-color: #AAF200;
+  background-color: #aaed4c;
 }
 
-/* body {
-  font-family: sans-serif;
+#main-logo {
+
 }
 
-.cell {
-  
-}
-
-.cell.empty {
-  background-color: white;
-}
-
-.cell.snake {
-  background-color: black;
-}
-
-.cell.food {
-  background-color: red;
-}
-
-.grid {
-  border: 1px solid black;
-
+#phone-background {
+  height: 900px;
 }
 
 .score {
-
-} */
-
+  font-family: 'VT323', monospace;
+  background-color: tomato;
+}
