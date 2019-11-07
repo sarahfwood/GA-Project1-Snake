@@ -1,4 +1,4 @@
-# GA-project-1
+# GA-project1-Snake
 
 How to Play
   Snake is a single-player game where the player earns points by guiding the snake to eat food randomly placed on the game board. Each item of food the snake eats the longer it grows. The game is over if the snake hits the edge of the board, or itself. To make things even more challenging, the snake increases speed as the longer it gets!
@@ -14,28 +14,7 @@ Features to add
   Current player score
   Start Button
 
-Initial State
-  Empty grid and start button
-
-Game Over State
-  Snake collides with walls or body.
-
-Variables
-  Snake
-  Food
-  Direction of snake
-  Speed
-  High score
-  Current score
-
-Data Structures
-  Create snake board object
-  Create class 'snake' 
-
-Event Listeners
-  Add keyboard events for movement of snake
-  Add event listener 'click' for start buttomn and to start a game. If time will add a pause button
-
-setIntervals or setTimeout required
-  setInterval to refresh and move snake by 1 grid in the direction it's facing
-
+## Left To Do
+1. Add Menu
+2. Add start, pause and reset button
+3. Add highest player score under menu

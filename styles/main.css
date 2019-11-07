@@ -1,13 +1,16 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#game {
+  position: absolute;
+  top: 220px;
+  left: 70px;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 220px;
-  left: 70px;
 }
 
 .row {
@@ -22,6 +25,11 @@ body {
 .cell.food {
   background-color: red;
 }
+
+.grid.end .cell.food, .grid.end .cell.snake {
+  background-color: #aaed4c;
+}
+
 .cell {
   display: flex;
   flex-direction: column;
@@ -33,15 +41,59 @@ body {
   background-color: #aaed4c;
 }
 
-#main-logo {
-
-}
-
 #phone-background {
   height: 900px;
 }
 
 .score {
-  font-family: 'VT323', monospace;
-  background-color: tomato;
+  color: #000;
+  font-size: 24px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 1;
+}
+
+.gameover {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 240px;
+  font-size: 42px;
+  text-align: center;
+  display: none;
+  z-index: 1;
+}
+
+.nokia-button {
+  display: block;
+  background: none;
+  border: 0;
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  outline: none;
+  font-family: 'Cinzel', serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.nokia-button.two {
+  left: 90px;
+  top: 390px;
+}
+
+.nokia-button.six {
+  left: 195px;
+  top: 440px;
+}
+
+.nokia-button.eight {
+  left: 90px;
+  top: 520px;
+}
+
+.nokia-button.four {
+  left: -20px;
+  top: 440px;
 }

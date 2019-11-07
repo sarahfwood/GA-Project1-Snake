@@ -1,17 +1,26 @@
 const grid = document.querySelector('#game .grid')
-const score = document.querySelector('#game .scre')
+const score = document.querySelector('#game .score')
+const gameover = document.querySelector('#game .gameover')
 const width = 13
 const height = 11
 const cells = {}
+// Snake is an array of parts of snake
+// each part of snake has its own x and y
+const snake = [{
+  x: 5,
+  y: 5
+}]
 
 let totalScore = 0
-let snakeHeadX = 5
-let snakeHeadY = 5
 let direction = 0
 
 //Utility functions
 function getCell(x, y) {
   return cells[x + ':' + y]
+}
+
+function getSnakeHead() {
+  return snake[0]
 }
 
 function setSnakeCell(cell) {
@@ -32,6 +41,14 @@ function isFoodCell(cell) {
 
 function isBlankCell(cell) {
   return cell.className === 'cell blank'
+}
+
+function isSnakeCell(cell) {
+  return cell.className === 'cell snake'
+}
+
+function growSnake(snakeTail) {
+  snake.push(snakeTail)
 }
 
 function updateScore() {
@@ -55,10 +72,10 @@ function createRandomNumber(max) {
 }
 
 // 1. Make the grid for the game
-for (let y = 0 ; y < height ; y++) {
+for (let y = 0; y < height; y++) {
   const row = document.createElement('div')
   row.classList.add('row')
-  for (let x = 0 ; x < width ; x++) {
+  for (let x = 0; x < width; x++) {
     const cell = document.createElement('div')
     const cellId = x + ':' + y
     setBlankCell(cell)
@@ -72,7 +89,8 @@ for (let y = 0 ; y < height ; y++) {
 // 2. Make the snake starting position
 // and the food srarting position
 
-const startingSnakeCell = getCell(snakeHeadX, snakeHeadY)
+const snakeHead = getSnakeHead()
+const startingSnakeCell = getCell(snakeHead.x, snakeHead.y)
 setSnakeCell(startingSnakeCell)
 createRandomFood()
 
@@ -102,52 +120,92 @@ document.addEventListener('keydown', event => {
   }
 })
 
+document.querySelector('#game .nokia-button.two')
+  .addEventListener('click', () => {
+    direction = 0
+  })
+
+document.querySelector('#game .nokia-button.four')
+  .addEventListener('click', () => {
+    direction = 3
+  })
+
+document.querySelector('#game .nokia-button.six')
+  .addEventListener('click', () => {
+    direction = 1
+  })
+
+document.querySelector('#game .nokia-button.eight')
+  .addEventListener('click', () => {
+    direction = 2
+  })
+
 // 4. Make update move snake
 function moveSnake() {
-  const currentCell = getCell(snakeHeadX, snakeHeadY)
+  const snakeHead = getSnakeHead()
+  // Move the snake parts
+  const snakeSize = snake.length
+  const lastSnakePart = snake[snakeSize - 1]
+  // We make a new object as we mutate the snake head
+  // below and the snake head might be the same if the
+  // size of the snake is only 1.
+  const snakeTail = { x: lastSnakePart.x, y: lastSnakePart.y }
+  for (let i = snakeSize - 1; i > 0; i--) {
+    snake[i].x = snake[i - 1].x
+    snake[i].y = snake[i - 1].y
+  }
   switch (direction) {
     case 0: {
-      let nextSnakeHeadY = snakeHeadY - 1
+      let nextSnakeHeadY = snakeHead.y - 1
       if (nextSnakeHeadY === -1) {
         nextSnakeHeadY = height - 1
       }
-      snakeHeadY = nextSnakeHeadY
+      snakeHead.y = nextSnakeHeadY
       break
     }
     case 1: {
-      let nextSnakeHeadX = snakeHeadX + 1
+      let nextSnakeHeadX = snakeHead.x + 1
       if (nextSnakeHeadX === width) {
         nextSnakeHeadX = 0
       }
-      snakeHeadX = nextSnakeHeadX
+      snakeHead.x = nextSnakeHeadX
       break
     }
     case 2: {
-      let nextSnakeHeadY = snakeHeadY + 1
+      let nextSnakeHeadY = snakeHead.y + 1
       if (nextSnakeHeadY === height) {
         nextSnakeHeadY = 0
       }
-      snakeHeadY = nextSnakeHeadY
+      snakeHead.y = nextSnakeHeadY
       break
     }
     case 3: {
-      let nextSnakeHeadX = snakeHeadX - 1
+      let nextSnakeHeadX = snakeHead.x - 1
       if (nextSnakeHeadX === -1) {
         nextSnakeHeadX = width - 1
       }
-      snakeHeadX = nextSnakeHeadX
+      snakeHead.x = nextSnakeHeadX
       break
     }
     default:
   }
-  const nextCell = getCell(snakeHeadX, snakeHeadY)
-  if (isFoodCell(nextCell)) {
+  const nextCell = getCell(snakeHead.x, snakeHead.y)
+  if (isSnakeCell(nextCell)) {
+    gameover.style.display = 'block'
+    grid.classList.add('end')
+    clearInterval(gamInterval)
+  } else if (isFoodCell(nextCell)) {
+    // add a new snake part to snake
+    growSnake(snakeTail)
     totalScore += 5
     updateScore()
     createRandomFood()
+  } else {
+    const snakeTailCell = getCell(snakeTail.x, snakeTail.y)
+    setBlankCell(snakeTailCell)
   }
-  setSnakeCell(nextCell)
-  setBlankCell(currentCell)
+  const nextSnakeHeadCell = getCell(snakeHead.x, snakeHead.y)
+  setSnakeCell(nextSnakeHeadCell)
 }
 
-setInterval(moveSnake, 100)
+const gamInterval = setInterval(moveSnake, 100)
