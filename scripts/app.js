@@ -13,7 +13,7 @@ let foodX = getRandomX()
 let foodY = getRandomY()
 let direction = 0
 
-//Utility function
+//Utility functions
 function getCell(x, y) {
   return cells[x + ':' + y]
 }
@@ -34,7 +34,7 @@ function getRandomX() {
   let x
   do {
     x = Math.floor(Math.random() * width)
-  } while ( x === snakeHeadX)
+  } while (x === snakeHeadX)
   return x
 }
 
@@ -42,7 +42,7 @@ function getRandomY() {
   let y
   do {
     y = Math.floor(Math.random() * height)
-  } while ( y === snakeHeadY)
+  } while (y === snakeHeadY)
   return y
 }
 
@@ -92,7 +92,7 @@ document.addEventListener('keydown', event => {
   }
 })
 
-//4.0 Make uodate move snake
+//4.0 Make update move snake
 function moveSnake() {
   const currentCell = getCell(snakeHeadX, snakeHeadY)
   setBlankCell(currentCell)
@@ -107,10 +107,36 @@ function moveSnake() {
       setSnakeCell(nextCell)
       break
     }
+
   }
 }
 
 setInterval(moveSnake, 1000)
+
+//5.0 Add Score
+function createScore(initialScore, game) {
+  const scoreDiv = document.createElement('div')
+  scoreDiv.className = 'score'
+  game.appendChild(scoreDiv)
+
+  const score = {
+    value: initialScore,
+    update,
+    remove
+  }
+
+  function update(newValue) {
+    score.value = newValue
+    scoreDiv.textContent = newValue
+  }
+
+  function remove() {
+    game.removeChild(scoreDiv)
+  }
+
+  update()
+  return score
+}
 
 // (function () {
 
@@ -271,4 +297,3 @@ setInterval(moveSnake, 1000)
 //   })
 
 // })()
-
