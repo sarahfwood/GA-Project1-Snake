@@ -107,7 +107,36 @@ function moveSnake() {
       setSnakeCell(nextCell)
       break
     }
-
+    case 1: {
+      let nextSnakeHeadY = snakeHeadY - 1
+      if (nextSnakeHeadY === -1) {
+        nextSnakeHeadY = height - 1
+      }
+      const nextCell = getCell(snakeHeadX, nextSnakeHeadY)
+      snakeHeadY = nextSnakeHeadY
+      setSnakeCell(nextCell)
+      break
+    }
+    case 2: {
+      let nextSnakeHeadY = snakeHeadY - 1
+      if (nextSnakeHeadY === -1) {
+        nextSnakeHeadY = height - 1
+      }
+      const nextCell = getCell(snakeHeadX, nextSnakeHeadY)
+      snakeHeadY = nextSnakeHeadY
+      setSnakeCell(nextCell)
+      break
+    }
+    case 3: {
+      let nextSnakeHeadY = snakeHeadY - 1
+      if (nextSnakeHeadY === -1) {
+        nextSnakeHeadY = height - 1
+      }
+      const nextCell = getCell(snakeHeadX, nextSnakeHeadY)
+      snakeHeadY = nextSnakeHeadY
+      setSnakeCell(nextCell)
+      break
+    }
   }
 }
 
