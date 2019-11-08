@@ -1,4 +1,6 @@
 # GA-project1-Snake
+This is a General Assembly project from SEI44.
+
 How to Play
   Snake is a single-player game where the player earns points by guiding the snake to eat food randomly placed on the game board. Each item of food the snake eats the longer it grows. The game is over if the snake hits the edge of the board, or itself. To make things even more challenging, the snake increases speed as the longer it gets!
   The aim of the game is to stay alive as long as possible.
