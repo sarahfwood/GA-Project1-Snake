@@ -24,8 +24,8 @@ body {
 }
 
 .cell.food {
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  background-color: #0f060f;
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
 }
 
 .grid.end .cell.food, .grid.end .cell.snake {
