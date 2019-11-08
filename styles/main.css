@@ -19,11 +19,13 @@ body {
 }
 
 .cell.snake {
-  background-color: black;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
 }
 
 .cell.food {
-  background-color: red;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
 }
 
 .grid.end .cell.food, .grid.end .cell.snake {
