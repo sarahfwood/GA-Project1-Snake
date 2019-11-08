@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto Mono', monospace;
+  background-color: silver;
 }
 
 #game {
@@ -83,7 +84,7 @@ body {
 .nokia-button.one {
   left: -20px;
   top: 380px;
-  color: lightslategrey;
+  color: gray;
 }
 
 .nokia-button.two {
@@ -94,7 +95,7 @@ body {
 .nokia-button.three {
   left: 195px;
   top: 380px;
-  color: lightslategrey;
+  color: gray;
 }
 
 .nokia-button.four {
@@ -105,7 +106,7 @@ body {
 .nokia-button.five {
   left: 90px;
   top: 455px;
-  color: lightslategrey;
+  color: gray;
 }
 
 .nokia-button.six {
@@ -127,26 +128,25 @@ body {
 .nokia-button.nine {
   left: 195px;
   top: 505px;
-  color: lightslategrey;
   color: black;
 }
 
 .nokia-button.zero {
   left: 90px;
   top: 580px;
-  color: lightslategrey;
+  color: gray;
 }
 
 .nokia-button.asterisk {
   font-size: 50px;
   left: -90x;
   top: 570px;
-  color: lightslategrey;
+  color: gray;
 
 }
 .nokia-button.hash {
   font-size: 35px;
   left: 195px;
   top: 570px;
-  color: lightslategrey;
+  color: gray;
 }
