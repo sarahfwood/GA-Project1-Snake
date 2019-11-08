@@ -80,9 +80,32 @@ body {
   font-size: 20px;
 }
 
+.nokia-button.one {
+  left: -20px;
+  top: 380px;
+  color: lightslategrey;
+}
+
 .nokia-button.two {
   left: 90px;
   top: 390px;
+}
+
+.nokia-button.three {
+  left: 195px;
+  top: 380px;
+  color: lightslategrey;
+}
+
+.nokia-button.four {
+  left: -20px;
+  top: 440px;
+}
+
+.nokia-button.five {
+  left: 90px;
+  top: 455px;
+  color: lightslategrey;
 }
 
 .nokia-button.six {
@@ -90,12 +113,40 @@ body {
   top: 440px;
 }
 
+.nokia-button.seven {
+  left: -20px;
+  top: 505px;
+  color: lightslategrey;
+}
+
 .nokia-button.eight {
   left: 90px;
   top: 520px;
 }
 
-.nokia-button.four {
-  left: -20px;
-  top: 440px;
+.nokia-button.nine {
+  left: 195px;
+  top: 505px;
+  color: lightslategrey;
+  color: black;
+}
+
+.nokia-button.zero {
+  left: 90px;
+  top: 580px;
+  color: lightslategrey;
+}
+
+.nokia-button.asterisk {
+  font-size: 50px;
+  left: -90x;
+  top: 570px;
+  color: lightslategrey;
+
+}
+.nokia-button.hash {
+  font-size: 35px;
+  left: 195px;
+  top: 570px;
+  color: lightslategrey;
 }

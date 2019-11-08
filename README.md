@@ -21,3 +21,5 @@ Credit to https://www.transparenttextures.com/ for texture fill of snake body an
 1. Add Menu
 2. Add start, pause and reset button
 3. Add highest player score under menu
+4. Add the remaining buttons for phone face
+5. Style buttons and add background

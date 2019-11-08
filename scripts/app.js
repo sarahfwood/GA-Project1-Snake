@@ -140,6 +140,13 @@ document.querySelector('#game .nokia-button.eight')
     direction = 2
   })
 
+document.querySelector('#game .nokia-button.nine')
+addEventListener('click', function (evt) {
+  if (evt.detail === 3) {
+    alert('Nee Naw Nee Naw...joking no emergency service is on the way. You need a real phone for that!')
+  }
+})
+
 // 4. Make update move snake
 function moveSnake() {
   const snakeHead = getSnakeHead()
