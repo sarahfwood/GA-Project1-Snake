@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: silver;
+  background-image: url("https://lh3.googleusercontent.com/proxy/-4RrST-HyDvtQU6u3QOWBm73L34fIWcEHsiOtW3qNulKDk8RLnOUOf2FMTDvuyouQqriqyfjtsb_nf-nO5H9OkXyHBWa40Hua5QwIFKJCVI");
 }
 
 #game {
@@ -80,7 +80,7 @@ body {
   font-weight: bolder;
   font-size: 20px;
 }
-
+/* 
 .nokia-button.one {
   left: -20px;
   top: 380px;
@@ -149,4 +149,4 @@ body {
   left: 195px;
   top: 570px;
   color: gray;
-}
+} */
