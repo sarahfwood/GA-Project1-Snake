@@ -1,17 +1,18 @@
 body {
   font-family: 'Roboto Mono', monospace;
-  background-image: url("https://lh3.googleusercontent.com/proxy/-4RrST-HyDvtQU6u3QOWBm73L34fIWcEHsiOtW3qNulKDk8RLnOUOf2FMTDvuyouQqriqyfjtsb_nf-nO5H9OkXyHBWa40Hua5QwIFKJCVI");
+  background-image: linear-gradient(to right, #00d4ff  , #090979, #020024);
+  overflow: hidden;
 }
 
 #game {
-  position: absolute;
-  top: 220px;
-  left: 70px;
+  margin: auto;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
+  border-style: solid;
+  border-color: black;
 }
 
 .row {
@@ -44,8 +45,25 @@ body {
   background-color: #aaed4c;
 }
 
+#container {
+  position: absolute;
+  left: calc(50% - 191px);
+  top: calc(50% - 460px);
+  width: 100px;
+  height: 1000px;
+}
+
+#grid-container {
+  display: block;
+  position: absolute;
+  top: 220px;
+  left: calc(50% + 7px);
+}
+
 #phone-background {
-  height: 900px;
+  height: 90%;
+  min-width: 100%;
+  position: absolute;
 }
 
 .score {
@@ -80,73 +98,228 @@ body {
   font-weight: bolder;
   font-size: 20px;
 }
-/* 
+
 .nokia-button.one {
   left: -20px;
-  top: 380px;
-  color: gray;
+  top: 367px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.two {
   left: 90px;
-  top: 390px;
+  top: 377px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.three {
   left: 195px;
-  top: 380px;
-  color: gray;
+  top: 367px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.four {
   left: -20px;
-  top: 440px;
+  top: 427px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.five {
   left: 90px;
-  top: 455px;
-  color: gray;
+  top: 442px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.six {
   left: 195px;
-  top: 440px;
+  top: 427px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.seven {
   left: -20px;
-  top: 505px;
-  color: lightslategrey;
+  top: 492px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.eight {
   left: 90px;
-  top: 520px;
+  top: 503px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.nine {
   left: 195px;
-  top: 505px;
-  color: black;
+  top: 492px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.zero {
   left: 90px;
-  top: 580px;
-  color: gray;
+  top: 567px;
+  color: rgba(255, 0, 0, 0);
 }
 
 .nokia-button.asterisk {
   font-size: 50px;
-  left: -20px;
-  top: 570px;
-  color: gray;
+  left: -10px;
+  top: 557px;
+  color: rgba(255, 0, 0, 0);
 
 }
 .nokia-button.hash {
   font-size: 35px;
   left: 195px;
-  top: 570px;
-  color: gray;
-} */
+  top: 557px;
+  color: rgba(255, 0, 0, 0);
+}
+
+.icon {
+  height: 20px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #game {
+    margin: auto;
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .cell.snake {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+  }
+  
+  .cell.food {
+    background-color: #0f060f;
+    background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+  }
+  
+  .grid.end .cell.food, .grid.end .cell.snake {
+    background-color: #aaed4c;
+  }
+  
+  .cell {
+    display: flex;
+    flex-direction: column;
+    min-width: 20px;
+    min-height: 20px;
+  }
+  
+  .cell.blank {
+    background-color: #aaed4c;
+  }
+  
+  #container {
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 360px);
+    width: 100px;
+    height: 800px;
+  }
+  
+  #grid-container {
+    display: block;
+    position: absolute;
+    top: 220px;
+    left: calc(50% - 30px);
+  }
+  
+  #phone-background {
+    display: none;
+  }
+  
+  .score {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  .gameover {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 240px;
+    font-size: 42px;
+    text-align: center;
+    display: none;
+    z-index: 1;
+  }
+  
+  .nokia-button {
+    display: block;
+    background: none;
+    border: 0;
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    outline: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  
+  .nokia-button.one {
+    display: none;
+  }
+  
+  .nokia-button.two {
+    display: none;
+  }
+  
+  .nokia-button.three {
+    display: none;
+  }
+  
+  .nokia-button.four {
+    display: none;
+  }
+  
+  .nokia-button.five {
+    display: none;
+  }
+  
+  .nokia-button.six {
+    display: none;
+  }
+  
+  .nokia-button.seven {
+    display: none;
+  }
+  
+  .nokia-button.eight {
+    display: none;
+  }
+  
+  .nokia-button.nine {
+    display: none;
+  }
+  
+  .nokia-button.zero {
+    display: none;
+  }
+  
+  .nokia-button.asterisk {
+    display: none;
+  
+  }
+  .nokia-button.hash {
+    display: none;
+  }
+  
+  .icon {
+    height: 20px;
+  }
+}

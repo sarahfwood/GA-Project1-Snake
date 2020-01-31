@@ -14,11 +14,13 @@
     <!-- <img src="images/Main Logo.png" alt="main-logo" id="main-logo"> -->
   </header>
   <main>
-    <img src="https://s3-eu-west-1.amazonaws.com/recombu/snake/img/3310.png" alt="phone" id="phone-background">
     <div id="game">
-      <div class="score">0</div>
+      <div id="container">
+        <img src="https://i.imgur.com/Ca15Wz9.png" alt="phone" id="phone-background">
+        <div id="grid-container">
+          <div class="grid"></div>
+          <div class="score">0</div>
       <div class="gameover">GAME OVER</div>
-      <div class="grid"></div>
       <button class="nokia-button one">1</button>
       <button class="nokia-button two">2</button>
       <button class="nokia-button three">3</button>
@@ -31,9 +33,32 @@
       <button class="nokia-button zero">0</button>
       <button class="nokia-button asterisk">*</button>
       <button class="nokia-button hash">#</button>
+        </div>
+      </div>
+      
     </div>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div>
+      <a href="https://www.linkedin.com/in/woodfsarah/" target="blank">
+        <img class="icon" src="https://i.imgur.com/D0wQHaI.png" alt="linkedin">
+      </a>
+    </div>
+    <div>
+      <a href="https://github.com/sarahfwood" target="blank">
+        <img class="icon" src="https://i.imgur.com/aIOrzJf.png"
+          alt="github">
+      </a>
+    </div>
+    <div>
+      <a href="https://twitter.com/woodfsarah" target="blank">
+        <img class="icon"
+          src="https://i.imgur.com/UwTX9qM.png"
+          alt="twitter">
+      </a>
+    </div>
+      <small>Made by SW</small>
+  </footer>
   <script src="scripts/app.js"></script>
 </body>
 </html>
