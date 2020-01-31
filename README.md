@@ -1,10 +1,9 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) General Assembly Project 1 - Old School Snake
 
 ## Overview
-This is my first project from General Assembly's Software Engineering Immersive Course (SEI44). 
+This is the first of my projects completed through General Assembly. Working on our own, our task was to recreate a game based on a list provided by GA. We had a number of requirements (see below) to meet and one week to complete it in. The game was built using HTML5, CSS3 and vanilla JavaScript (2019). 
 
-This is an individual project and we were given a week to complete.
-
+<img src="https://i.imgur.com/vtiD2JL.gif" height="600" />
 
 ## Technical Requirements
 
@@ -33,14 +32,12 @@ This is an individual project and we were given a week to complete.
 ## Credits
 * https://www.transparenttextures.com
 * https://giphy.com
+* https://gifox.io/
 
 
 ## Features to add
 1. Menu
 2. Start, pause and reset buttons
 3. Scoreboard
-
-
-## Screenshots
 
 

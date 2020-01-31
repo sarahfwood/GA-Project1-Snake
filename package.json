@@ -1,0 +1,24 @@
+{
+  "name": "snake",
+  "version": "0.0.1",
+  "description": "General Assembly Project 1 - Old School Snake",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahfwood/GA-project-1.git"
+  },
+  "author": "Sarah Wood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarahfwood/GA-project-1/issues"
+  },
+  "homepage": "https://github.com/sarahfwood/GA-project-1#readme",
+  "dependencies": {
+    "http-server": "0.12.1"
+  },
+  "engines": {
+    "node": "12.13.0"
+  }
+}
