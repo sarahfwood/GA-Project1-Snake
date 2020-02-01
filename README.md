@@ -3,12 +3,15 @@
 ## Overview
 This is the first of my projects completed through General Assembly. Working on our own, our task was to recreate a game based on a list provided by GA. We had a number of requirements (see below) to meet and one week to complete it in. The game was built using HTML5, CSS3 and vanilla JavaScript (2019). 
 
-Desktop View
+### Desktop View
 Ways to play: Arrows on keyboard and buttons on Nokia 3310
-<img src="https://i.imgur.com/vtiD2JL.gif" height="600" />
 
-Mobile View
+<img src="https://i.imgur.com/bacxrim.gif" height="600" />
+
+### Mobile View
 Ways to play: Directional arrows (touchscreen)
+
+<img src="https://i.imgur.com/1dnNOYn.gif" height="600" />
 
 
 ## Technical Requirements
