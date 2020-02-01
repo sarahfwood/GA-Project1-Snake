@@ -9,7 +9,7 @@ Ways to play: Arrows on keyboard and buttons on Nokia 3310
 
 Mobile View
 Ways to play: Directional arrows (touchscreen)
-<img src="https://i.imgur.com/1dnNOYn.gifv" height="600" />
+
 
 ## Technical Requirements
 
