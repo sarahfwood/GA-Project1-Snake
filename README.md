@@ -3,6 +3,12 @@
 ## Overview
 This is the first of my projects completed through General Assembly. Working on our own, our task was to recreate a game based on a list provided by GA. We had a number of requirements (see below) to meet and one week to complete it in. The game was built using HTML5, CSS3 and vanilla JavaScript (2019). 
 
+### How to Play
+  Snake is a single-player game where the player earns points by guiding the snake to eat food randomly placed on the game board. Each item of food the snake eats the longer it grows. The game is over if the snake hits the edge of the board, or itself. To make things even more challenging, the snake increases speed as the longer it gets!
+  The aim of the game is to stay alive as long as possible.
+  
+  <img src="https://cdn0.iconfinder.com/data/icons/entypo/80/link5-512.png" height="0.5" /> [Click here to play!](https://oldschoolsnake.herokuapp.com/)
+
 ### Desktop View
 Ways to play: Arrows on keyboard and buttons on Nokia 3310
 
@@ -22,12 +28,6 @@ Ways to play: Directional arrows (touchscreen)
 * Use **Javascript** for **DOM manipulation**
 * **Deploy your game online**, where the rest of the world can access it
 * Use **semantic markup** for HTML and CSS (adhere to best practices)
-
-
-## How to Play
-  Snake is a single-player game where the player earns points by guiding the snake to eat food randomly placed on the game board. Each item of food the snake eats the longer it grows. The game is over if the snake hits the edge of the board, or itself. To make things even more challenging, the snake increases speed as the longer it gets!
-  The aim of the game is to stay alive as long as possible.
-
 
 ## Technologies
 * HTML5
