@@ -218,6 +218,10 @@ body {
   .cell.blank {
     background-color: #aaed4c;
   }
+
+  .space {
+    height: 50px;
+  }
   
   #container {
     position: absolute;
@@ -227,6 +231,13 @@ body {
     height: 800px;
   }
   
+  #mobile-buttons {
+    position: relative;
+    height: 200px;
+    left: calc(50% + 5px);
+    top: calc(50% + 95px);
+  }
+
   #grid-container {
     display: block;
     position: absolute;
@@ -276,7 +287,9 @@ body {
   }
   
   .nokia-button.two {
-    display: none;
+    left: 94px;
+    top: 280px;
+    color: rgba(255, 0, 0, 0);
   }
   
   .nokia-button.three {
@@ -284,7 +297,9 @@ body {
   }
   
   .nokia-button.four {
-    display: none;
+    left: 23px;
+    top: 350px;
+    color: rgba(255, 0, 0, 0);
   }
   
   .nokia-button.five {
@@ -292,7 +307,9 @@ body {
   }
   
   .nokia-button.six {
-    display: none;
+    left: 166px;
+    top: 350px;
+    color: rgba(255, 0, 0, 0);
   }
   
   .nokia-button.seven {
@@ -300,7 +317,9 @@ body {
   }
   
   .nokia-button.eight {
-    display: none;
+    left: 94px;
+    top: 422px;
+    color: rgba(255, 0, 0, 0);
   }
   
   .nokia-button.nine {
@@ -323,3 +342,8 @@ body {
     height: 20px;
   }
 }
+
+@media only screen and (min-width: 500px) {
+  #mobile-buttons  {
+  display: none !important;}
+  }
