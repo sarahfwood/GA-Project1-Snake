@@ -17,8 +17,6 @@ Ways to play: Directional arrows (touchscreen)
 ## Technical Requirements
 
 * **Render a game in the browser**
-* **Switch turns** between two players
-* **Design logic for winning** & **visually display which player won**
 * **Include separate HTML / CSS / JavaScript files**
 * Stick with **KISS (Keep It Simple Stupid)** and **DRY (Don't Repeat Yourself)** principles
 * Use **Javascript** for **DOM manipulation**
