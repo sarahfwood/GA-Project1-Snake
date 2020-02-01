@@ -42,7 +42,7 @@ Ways to play: Directional arrows (touchscreen)
 * https://gifox.io/
 
 
-## Features to add
+## Features to add/improvements
 1. Menu
 2. Start, pause and reset buttons
 3. Scoreboard
