@@ -45,6 +45,6 @@ Ways to play: Directional arrows (touchscreen)
 ## Features to add/improvements
 1. Menu
 2. Start, pause and reset buttons
-3. Scoreboard
+3. Scoreboard 
 
 
