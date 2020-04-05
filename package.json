@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "General Assembly Project 1 - Old School Snake",
   "scripts": {
-    "start": "http-server ."
+    "start": "serve ."
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/sarahfwood/GA-project-1#readme",
   "dependencies": {
-    "http-server": "0.12.1"
+    "serve": "^11.3.0"
   },
   "engines": {
     "node": "12.13.0"
