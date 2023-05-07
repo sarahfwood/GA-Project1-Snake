@@ -17,7 +17,7 @@
   "homepage": "https://github.com/sarahfwood/GA-project-1#readme",
   "dependencies": {
     "ini": "^2.0.0",
-    "serve": "^11.3.0"
+    "serve": "^14.2.0"
   },
   "engines": {
     "node": "12.13.0"
